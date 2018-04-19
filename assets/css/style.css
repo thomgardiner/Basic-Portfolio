@@ -1,14 +1,33 @@
 body{
-	background-color: #93c4b5;
+	background-color: #D4EDF7;
 	margin: 0px;
 	padding: 0px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+h1,h2,h3,h4{
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+a{
+	text-decoration: none;
 }
 
 
 ul {
     list-style-type: none;
-    margin: 5px;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 li {
@@ -28,6 +47,9 @@ li {
 	content: "";
     clear: both;
     display: table;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #top-container {
@@ -39,35 +61,38 @@ li {
 
 #name-header{
 	float: left;
-	width: 20%;
+	width: 35%;
 	height: 100%;
+	background-color: #347B98;
+	box-shadow:2px 1px 1px #828282;
+	border-radius: 1px;
 }
 
 #nav{
 	float: right;
-	width: 20%;
+	width: 30%;
 	height: 100%;
 	padding-left: 30px;
 	text-align: center;
 	margin: auto;
 	margin-top: 5px;
+	overflow: hidden;
 
 }
 
-#nav-content{
-	text-align: center;
-	margin: 0px;
-	list-style-type: square;
-	height: 100%;
-	width: 200px;
-}
 
+#nav-menu{
+	width: 100%;
+	margin-top: 10px;
+}
 
 #main-body{
 	max-width: 960px;
 	width: 70%;
 	height: 100%;
-	margin: auto;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 	background-color: white;
 	margin-top: 10px;
 	box-shadow:2px 2px 15px #828282;
@@ -76,11 +101,16 @@ li {
 
 .content{
 	width: 90%;
+	min-height: 550px;
 	height: 100%;
-	margin: auto;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 	content: "";
     clear: both;
     display: table;
+    position: relative;
+    overflow: hidden;
 }
 
 #footer{
@@ -95,13 +125,46 @@ li {
 	float: left;
 	margin: 10px 10px 10px 10px;
 	box-shadow:2px 2px 5px #828282;
+	z-index: 1;
+	width: 200px;
+	height: 200px;
+	position: relative;
 }
 
 #port-content{
 	margin: auto;
 	width: 80%;
+	height: 100%;
+	max-height: 450px;
 }
 
 #main-image{
+	margin-right: 30px;
+}
 
+#footer{
+	position: sticky;
+}
+
+.port-text{
+	position: absolute;
+	text-align: center;
+	font-weight: bold;
+	line-height: 20px;
+	top: 70px;
+	width: 100%;
+	color: white;
+	max-width: 200px;	max-height: 60px;
+	height: 30%;
+	background-color:rgba(52,123,152,0.7);
+}
+
+#contact-form{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+#form{
+	margin: auto;
 }
